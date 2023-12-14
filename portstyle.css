@@ -1,0 +1,612 @@
+/* "*" er en universal selector som man benytter for at det refere til hele ens HTML  */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: poppins;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+/*==main================================*/
+#main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    background-color: #131313;
+}
+/*==nav-bar=============================*/
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0px auto;
+    padding: 30px 0px;
+}
+.logo{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #1a1a1a;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu li a{
+    margin: 0px 30px;
+    color: #c9c9c9;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    transition: all ease 0.3s;
+}
+.nav-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-social a{
+    color: #c9c9c9;
+    margin-left: 20px;
+    transition: all ease 0.3s;
+}
+.nav-social a:first-child{
+    margin-left: 0px;
+} 
+.menu li a:hover,
+.nav-social a:hover{
+    color: #ffffff;
+}
+
+
+/*==main-content=========================*/
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 500px;
+    text-align: center;
+}
+.main-img{
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.main-content strong{
+    color: #fefefe;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.main-content span{
+    color: #8d94b4;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+.main-content h1{
+    font-size: 3rem;
+    color: #ffffff;
+    line-height: 3.4rem;
+    margin-top: 20px;
+}
+.main-content p{
+    color: #5e5e5e;
+    margin-top: 20px;
+    letter-spacing: 0.3px;
+}
+/*==about-me================================*/
+#about-me{
+    max-width: 800px;
+    width: 90%;
+    margin: 50px auto;
+}
+#about-me strong{
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #8d94b4;
+}
+#about-me h2{
+    font-size: 4rem;
+    line-height: 4.4rem;
+    color: #272727;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.about-text h3{
+    font-size: 3rem;
+    line-height: 3.4rem;
+    color: #272727;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.about-text{
+    margin-top: 30px;
+    max-width: 85%;
+    margin-left: auto;
+}
+.about-text p{
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    line-height: 1.4rem;
+    letter-spacing: 0.3px;
+}
+.about-text a{
+    width: 180px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #8d94b43b;
+    color: #1a1a1a;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.about-text a i{
+    margin-left: 10px;
+}
+
+/*==our-services=====================*/
+#our-services{
+    width: 100%; /* Sætter bredden til 100% */
+    margin: 50px auto 0px auto; /* Margin på 50px øverst, auto venstre og højre (centreret) */
+    background-color:#161616; /* Baggrundsfarve #161616 */
+    padding: 50px 0px; /* Padding 50px øverst og nederst, 0px venstre og højre */
+    display: flex; /* Viser elementet som en fleksibel container */
+    flex-direction: column; /* Elementerne anbringes i en kolonne */
+    justify-content: center; /* Centrerer elementer vandret */
+    align-items: center; /* Centrerer elementer lodret */
+    border-top: 1px solid #eeeeee; /* En pixel solid grænse øverst med farve #eeeeee */
+}
+.services-heading {
+    display: flex; /* Elementet vises som en fleksibel container */
+    justify-content: space-between; /* Fordeler pladsen mellem elementerne i containeren */
+    align-items: center; /* Centrerer elementerne lodret i containeren */
+    max-width: 1200px; /* Sætter den maksimale bredde til 1200px */
+    width: 90%; /* Sætter bredden til 90% af forælderens bredde */
+    margin: auto; /* Centrerer elementet vandret inden for dets container */
+}
+
+/* Styling for <strong> elementer inden for '.services-heading-text' */
+.services-heading-text strong {
+    color: #8d94b4; /* Sætter tekstenfarven til en bestemt nuance af grå */
+    font-size: 0.9rem; /* Angiver skriftstørrelsen til 0.9 rem (relativ til rodemnet) */
+    font-weight: 600; /* Definerer skriftens vægt som halvtyk (600) */
+    letter-spacing: 1px; /* Tilføjer lidt mellemrum mellem bogstaverne */
+}
+/* Styling for <h2> elementer inden for '.services-heading-text' */
+.services-heading-text h2 {
+    font-size: 2.2rem; /* Angiver skriftstørrelsen til 2.2 rem (relativ til rodemnet) */
+    color: #ffffff; /* Sætter tekstenfarven til hvid */
+    font-weight: 700; /* Definerer skriftens vægt som fed (700) */
+    max-width: 600px; /* Fastlægger den maksimale bredde på teksten til 600 pixels */
+}
+/* Styling for elementer med klasserne '.services-box-container' og '.team-box-container' */
+.services-box-container,
+.team-box-container {
+    max-width: 1200px; /* Sætter den maksimale bredde til 1200px */
+    width: 90%; /* Definerer bredden som 90% af forælderens bredde */
+    margin: 40px auto; /* Sætter marginen øverst og nederst til 40px og i siderne til 'auto' for at centrere elementet */
+    overflow: hidden; /* Angiver at eventuel overflow skal skjules */
+    display: grid; /* Bruger CSS Grid til layout */
+    grid-gap: 30px; /* Sætter afstanden mellem grid-elementerne til 30px */
+    grid-template-columns: 1fr 1fr 1fr; /* Opretter et grid med tre kolonner, hver med samme bredde (1fr) */
+}
+.service-box {
+    display: flex; /* Bruger Flexbox-layout */
+    flex-direction: column; /* Angiver, at elementet skal være kolonnebaseret */
+    justify-content: center; /* Centrerer indholdet lodret */
+    align-items: flex-start; /* Justerer indholdet til venstre inden i kolonnen */
+    max-width: 100%; /* Sætter maksimal bredde til 100% af forælderens bredde */
+    border: 1px solid #242424; /* Sætter en 1px solid kantlinje med farven #242424 */
+    padding: 30px; /* Tilføjer 30px polstring inden i elementet */
+    background-color: #1a1a1a; /* Sætter baggrundsfarven til #1a1a1a */
+}
+
+.service-box:hover {
+    border: 1px solid #8d94b4; /* Ved hover-effekt ændres kantlinjefarven til #8d94b4 */
+}
+
+.service-box i {
+    font-size: 2rem; /* Indstiller fontstørrelsen til 2rem */
+    color: #ffffff; /* Sætter tekstfarven til hvid */
+    width: 60px; /* Sætter bredden til 60px */
+    height: 60px; /* Sætter højden til 60px */
+    border-radius: 5px; /* Runder hjørnerne med en radius på 5px */
+    display: flex; /* Bruger Flexbox-layout */
+    justify-content: center; /* Centrerer indholdet vandret */
+    align-items: center; /* Centrerer indholdet lodret */
+    background-color: #8d94b43b; /* Sætter baggrundsfarven til #8d94b43b */
+}
+
+.service-box strong {
+    color: #ffffff; /* Sætter tekstfarven til hvid */
+    font-size: 1.4rem; /* Indstiller fontstørrelsen til 1.4rem */
+    margin-top: 20px; /* Tilføjer 20px øverst som margin */
+    font-weight: 600; /* Angiver skriftens vægt som 600 (semi-bold) */
+}
+
+.service-box p {
+    font-size: 0.9rem; /* Indstiller fontstørrelsen til 0.9rem */
+    line-height: 1.4rem; /* Indstiller linjehøjden til 1.4rem */
+    color: #e7e7e7; /* Sætter tekstfarven til #e7e7e7 */
+  
+    overflow: hidden; /* Skjuler overskydende tekst */
+}
+.service-box a {
+    height: 45px; /* Sætter højden til 45px */
+    background-color: #8d94b43b; /* Sætter baggrundsfarven til #8d94b43b */
+    color: #ffffff; /* Sætter tekstfarven til hvid */
+    padding: 0px 20px; /* Tilføjer 0px top/bund og 20px venstre/højre som indvendig polstring */
+    display: flex; /* Bruger Flexbox-layout */
+    justify-content: center; /* Centrerer indholdet vandret */
+    align-items: center; /* Centrerer indholdet lodret */
+    font-size: 0.9rem; /* Indstiller fontstørrelsen til 0.9rem */
+    font-weight: 500; /* Angiver skriftens vægt som 500 */
+    border-radius: 5px; /* Runder hjørnerne med en radius på 5px */
+    margin-top: 30px; /* Tilføjer 30px øverst som margin */
+}
+
+.service-btn {
+    color: #ffffff; /* Sætter tekstfarven til hvid */
+    font-size: 0.9rem; /* Indstiller fontstørrelsen til 0.9rem */
+    margin-top: 10px; /* Tilføjer 10px øverst som margin */
+    text-align: center; /* Centrerer teksten vandret */
+    padding: 0px 10px; /* Tilføjer 0px top/bund og 10px venstre/højre som indvendig polstring */
+}
+
+.service-btn a {
+    color: #8d94b4; /* Sætter tekstfarven til #8d94b4 */
+    text-decoration: underline; /* Tilføjer understregning til teksten */
+    font-weight: 600; /* Angiver skriftens vægt som 600 (semi-bold) */
+}
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    background-color: #c9c9c9; /* Baggrundsfarve */
+    color: black; /* Tekstfarve */
+    align-items: center; /* Centrering af elementer */
+    padding: 20px; /* Polstring */
+}
+
+.headings {
+    display: flex;
+    justify-content: center; /* Centrering af overskrift */
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Centrerer indholdet vandret og fordeler det i rækker */
+    align-items: flex-start; /* Justerer startplaceringen for elementer i rækker */
+    box-sizing: border-box; /* Sørger for at medtage padding og kant i elementets samlede bredde og højde */
+}
+
+figure {
+    position: relative; /* Definerer elementets position */
+    margin-bottom: 20px; /* Afstand under hvert billede */
+    text-align: center; /* Centrerer teksten inden i figure-elementet */
+}
+
+figcaption {
+    /* Stil for figcaption (billedtitel) */
+    position: absolute; /* Positionerer figcaption relativt til figure-elementet */
+    top: 50%; /* Placeringen af figcaption fra toppen af figure-elementet */
+    left: 50%; /* Placeringen af figcaption fra venstre side af figure-elementet */
+    transform: translate(-50%, -50%); /* Centrerer figcaption */
+    background-color: rgba(255, 255, 255, 0.9); /* Baggrundsfarven for figcaption */
+    padding: 10px; /* Polstring for figcaption */
+    text-align: center; /* Centrerer teksten i figcaption */
+    visibility: hidden; /* Skjuler figcaption ved start */
+    opacity: 0; /* Skjuler figcaption ved start */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Overgangseffekt for synlighed og opacitet */
+    border: 1px solid transparent; /* Tilføjer en gennemsigtig kant til figcaption */
+}
+
+figure {
+    /* Figurstil for hovereffekter */
+    position: relative; /* Elementets position */
+    margin-bottom: 20px; /* Afstand under hvert billede */
+    overflow: hidden; /* Skjuler figcaption på starten */
+    border-radius: 8px; /* Runder kanterne på billedet */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tilføjer en skygge for dybde */
+}
+
+figure:hover figcaption {
+    visibility: visible; /* Gør figcaption synlig ved hover */
+    opacity: 1; /* Gør figcaption synlig ved hover */
+}
+
+figure:hover img {
+    transform: scale(1.1); /* Gør billedet lidt større ved hover */
+    transition: transform 0.3s ease; /* Tilføjer en glidende overgangseffekt til billedet */
+}
+
+.gallery img {
+    width: 360px; /* Billedets bredde */
+    height: 240px; /* Billedets højde */
+    margin: 10px; /* Afstand omkring billedet */
+}
+
+.produkter {
+    scroll-behavior: smooth; /* Indstiller en glidende scrolling for sektionen */
+}
+
+
+
+
+/*==contact=============================*/
+/* Styling for kontaktsektionen */
+#contact {
+    width: 90%; /* Bredden af sektionen, 90% af forælderens bredde */
+    max-width: 950px; /* Maksimal bredde på 950px */
+    display: flex; /* Viser som et flekselement */
+    flex-direction: column; /* Indholdet er stakket lodret */
+    justify-content: center; /* Centrerer indholdet vertikalt */
+    align-items: center; /* Centrerer indholdet horisontalt */
+    margin: 80px auto; /* Margin på 80px øverst og nederst, auto-sider på siderne */
+    text-align: center; /* Centrerer tekst */
+}
+
+/* Styling for stærk markeret tekst i kontaktsektionen */
+.contact strong {
+    color: #8d94b4; /* Farven på teksten */
+    font-size: 0.87rem; /* Skriftstørrelse */
+    letter-spacing: 1px; /* Afstand mellem bogstaver */
+    font-weight: 600; /* Fed skrift */
+}
+
+/* Styling for overskrift i kontaktsektionen */
+.contact h3 {
+    color: #1d1d1d; /* Farven på teksten */
+    font-size: 2.37rem; /* Skriftstørrelse */
+    letter-spacing: 1px; /* Afstand mellem bogstaver */
+}
+
+/* Styling for almindelig tekst i kontaktsektionen */
+.contact p {
+    color: #202020; /* Farven på teksten */
+    max-width: 640px; /* Maksimal bredde på 640px */
+    margin: 15px 0px; /* Margin øverst og nederst */
+    letter-spacing: 1px; /* Afstand mellem bogstaver */
+}
+
+/* Styling for fed tekst i en paragraf i kontaktsektionen */
+.contact p b {
+    color: #252525; /* Farven på teksten */
+    font-weight: 500; /* Fed skrift */
+}
+
+/* Styling for links i kontaktsektionen */
+.contact a {
+    width: 200px; /* Bredde på 200px */
+    height: 45px; /* Højde på 45px */
+    display: flex; /* Viser som et flekselement */
+    justify-content: center; /* Centrerer indholdet horisontalt */
+    align-items: center; /* Centrerer indholdet vertikalt */
+    background-color: #8d94b43b; /* Baggrundsfarve */
+    color: #1a1a1a; /* Farven på teksten */
+    font-weight: 600; /* Fed skrift */
+}
+
+/* Styling for ikonet inde i et link i kontaktsektionen */
+.contact a i {
+    margin-left: 10px; /* Margin til venstre */
+}
+
+/*==footer========================*/
+/* Styling for footer-sektionen */
+footer {
+    display: flex; /* Viser som et flekselement */
+    justify-content: space-between; /* Afstand mellem elementerne i footer */
+    align-items: center; /* Centrerer indholdet vertikalt */
+    max-width: 950px; /* Maksimal bredde på 950px */
+    width: 100%; /* 100% bredde af forældreelement */
+    margin: 70px auto 0px auto; /* Margin: 70px øverst, auto-sider på siderne */
+    padding: 20px; /* Padding på 20px */
+    text-align: center; /* Centrerer tekst */
+    border-top: 1px solid #d8d8d8; /* Øvre kantstreg */
+}
+
+/* Styling for spans i footer */
+footer span {
+    color: #313131; /* Farven på teksten */
+    text-transform: uppercase; /* Omdanner teksten til store bogstaver */
+    letter-spacing: 1px; /* Afstand mellem bogstaver */
+    font-size: 0.9rem; /* Skriftstørrelse */
+}
+
+/* Styling for logoet i footer */
+footer .footer-logo {
+    color: #1f1f1f; /* Farven på teksten */
+    font-weight: 500; /* Skriftvægt */
+    letter-spacing: 3px; /* Afstand mellem bogstaver */
+    font-size: 1.3rem; /* Skriftstørrelse */
+}
+
+/*responsive - hjælper med at fjerne burgerikonet når det som en web*/
+.menu-icon,
+.menu-btn{
+    display: none;
+}
+@media(max-width: 1000px) {
+    /* Styling for navigationselementer ved mindre skærmstørrelser */
+    .navigation {
+        justify-content: space-between; /* Afstand mellem elementerne */
+        padding: 20px; /* Indvendig polstring */
+        position: relative; /* Relativ positionering */
+        width: 100%; /* 100% bredde af forældreelement */
+        z-index: 103; /* Z-index for at styre lagrækkefølgen */
+    }
+
+    /* Styling for logoet ved mindre skærmstørrelser */
+    .logo {
+        margin-right: auto; /* Margin til højre */
+        margin-left: 20px; /* Margin til venstre */
+    }
+
+    /* Styling for menuen ved mindre skærmstørrelser */
+    .navigation .menu {
+        display: none; /* Skjuler menuen som standard */
+        position: absolute; /* Absolut positionering */
+        left: 0px; /* Venstre afstanden fra det øverste element */
+        top: 100%; /* Afstand fra toppen af det overordnede element */
+        background-color: #131313; /* Baggrundsfarve for menuen */
+        width: 100%; /* 100% bredde af forældreelementet */
+        padding: 0px; /* Ingen polstring */
+        margin: 0px; /* Ingen margin */
+        box-shadow: 2px 30px 30px rgba(0, 0, 0, 0.05); /* Skyggeeffekt */
+    }
+
+    /* Styling for menuelementerne ved mindre skærmstørrelser */
+    .navigation .menu li {
+        width: 100%; /* 100% bredde af forældreelementet */
+        margin: 0px; /* Ingen margin */
+        padding: 0px; /* Ingen polstring */
+    }
+
+    /* Styling for menu-links ved mindre skærmstørrelser */
+    .navigation .menu li a {
+        width: 100%; /* 100% bredde af forældreelementet */
+        display: flex; /* Viser som flekselement */
+        align-items: center; /* Centrerer indholdet vertikalt */
+        margin: 0px; /* Ingen margin */
+        padding: 20px; /* Indvendig polstring */
+        border-bottom: 1px solid #161616; /* Nederste kantstreg */
+    }
+
+    /* Styling for menu-ikonet ved mindre skærmstørrelser */
+    .menu-icon {
+        display: block; /* Viser menuikonet */
+    }
+
+    .navigation .menu-icon {
+        cursor: pointer; /* Ændrer markøren til en hånd */
+        float: right; /* Flyder til højre */
+        padding: 10px 0px; /* Ydre polstring */
+        position: relative; /* Relativ positionering */
+        user-select: none; /* Forhindrer markøren i at vælge tekst */
+        z-index: 106; /* Z-index for at styre lagrækkefølgen */
+    }
+
+    .navigation .menu-icon .nav-icon {
+        background-color: #ffffff; /* Baggrundsfarve for ikonet */
+        display: block; /* Viser ikonet som blok */
+        position: relative; /* Relativ positionering */
+        height: 2px; /* Højde på ikonet */
+        transition: background 0.2s ease-out; /* Glat overgang for baggrundsfarven */
+        width: 25px; /* Bredde på ikonet */
+    }
+
+    .navigation .menu-icon .nav-icon::before,
+    .navigation .menu-icon .nav-icon::after {
+        background-color: #ffffff; /* Baggrundsfarve for før og efter elementer */
+        content: ''; /* Ingen indhold */
+        position: absolute; /* Absolut positionering */
+        height: 100%; /* Højde på før og efter elementer */
+        transition: all ease-out 0.2s; /* Glat overgang for alle egenskaber */
+        width: 100%; /* Bredde på før og efter elementer */
+    }
+
+    /* Justering af positionen af elementer, der bruges til at skabe de vandrette linjer i hamburgerikonet */
+    .navigation .menu-icon .nav-icon::before {
+        top: 9px; /* Afstand fra toppen af før-elementet */
+    }
+
+    .navigation .menu-icon .nav-icon::after {
+        top: -9px; /* Afstand fra toppen af efter-elementet */
+    }
+
+    /* Regel der angiver, at når hamburgerikonet er markeret (checked),
+    skal baggrundsfarven være gennemsigtig. Dette kan bruges til at ændre farven på ikonet efter interaktion. */
+    .navigation .menu-icon:checked ~ .menu-icon .nav-icon,
+    .navigation .menu-btn:checked ~ .menu-icon .nav-icon {
+        background-color: transparent; /* Gennemsigtig baggrundsfarve */
+    }
+}
+
+ /*Denne regel angiver, at når hamburger-ikonet er markeret (checked),
+ skal baggrunds farven være gennemsigtig. Dette kan bruges til at ændre farven på ikonet efter interaktion.*/
+    .navigation .menu-icon:checked ~ .menu-icon .nav-icon,
+    .navigation .menu-btn:checked ~ .menu-icon .nav-icon{
+        background-color: transparent;
+    }
+    
+/*Disse linjer roterer de pseudo-elementer, der udgør de vandrette linjer i hamburger-ikonet,
+når hamburger-ikonet er markeret (checked). Dette skaber en X-formet animation for at indikere,
+at menuen er blevet åbnet.*/
+    .navigation .menu-btn:checked ~ .menu-icon .nav-icon::before{
+        transform: rotate(-45deg);
+        top: 0px;
+    }
+    .navigation .menu-btn:checked ~ .menu-icon .nav-icon::after{
+        transform: rotate(45deg);
+        top: 0px;
+    }
+/*Denne regel viser menuen, når hamburger-ikonet er markeret (checked).
+Når brugeren klikker på hamburger-ikonet på en mindre skærm, skifter checkboxen tilstanden fra ikke-markeret til markeret,
+hvilket får menuen til at blive vist ved at ændre dens display til block.*/
+
+    .navigation .menu-btn:checked ~ .menu{
+        display: block;
+    }   
+
+    @media(max-width: 850px) {
+        /* Ændrer antallet af kolonner i services-box-container ved mindre skærmstørrelser */
+        .services-box-container {
+            grid-template-columns: 1fr; /* Efterlader kun en kolonne */
+        }
+    }
+    
+    @media(max-width: 724px) {
+        /* Ændrer størrelsen på overskriften i main-content ved mindre skærmstørrelser */
+        .main-content h1 {
+            font-size: 1.8rem; /* Ændrer skriftstørrelsen */
+            line-height: 2.2rem; /* Ændrer linjehøjde */
+            max-width: 80%; /* Ændrer maksimal bredde */
+            letter-spacing: 0.3px; /* Ændrer afstanden mellem bogstaver */
+        }
+    
+        /* Ændrer størrelsen på overskriften og tekst i about-me-sektionen ved mindre skærmstørrelser */
+        #about-me h2 {
+            font-size: 1.8rem; /* Ændrer skriftstørrelsen */
+            line-height: 2.2rem; /* Ændrer linjehøjde */
+        }
+        .about-text h3 {
+            font-size: 2rem; /* Ændrer skriftstørrelsen */
+            line-height: 2.4rem; /* Ændrer linjehøjde */
+        }
+    
+        /* Ændrer størrelsen på overskriften i services-heading-sektionen ved mindre skærmstørrelser */
+        .services-heading h2 {
+            font-size: 1.8rem; /* Ændrer skriftstørrelsen */
+            line-height: 2.2rem; /* Ændrer linjehøjde */
+        }
+    
+        /* Ændrer størrelsen på overskriften i contact-sektionen ved mindre skærmstørrelser */
+        .contact h3 {
+            font-size: 2rem; /* Ændrer skriftstørrelsen */
+            line-height: 2.5rem; /* Ændrer linjehøjde */
+        }
+    }
